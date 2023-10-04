@@ -1,4 +1,6 @@
+import React from 'react';
 import { ThemeProvider, createTheme } from "@mui/material";
+import Navbar from "./components/assets/sections/Navbar";
 
 // modified theming for the app
 const theme = createTheme({
@@ -16,11 +18,11 @@ const theme = createTheme({
 
 function App() {
   return (
+    <> 
     <ThemeProvider theme={theme}>
-      <div className="App">
-        Room landing page
-      </div>
+        <Navbar/>
     </ThemeProvider>
+    </>
   )
 }
 
