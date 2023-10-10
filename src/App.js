@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider, createTheme, Box } from "@mui/material";
+import HeroSection from './components/HeroSection';
 
 const theme = createTheme({
   breakpoints: {
@@ -18,11 +19,9 @@ function App() {
   return (
     
     <ThemeProvider theme={theme}>
-      <> 
       <Box>
-        hello react and MUI
+        <HeroSection/>
       </Box>
-      </>  
     </ThemeProvider>
   )
 }
