@@ -1,8 +1,6 @@
 import React from 'react';
-import { ThemeProvider, createTheme } from "@mui/material";
-import Navbar from "./components/assets/sections/Navbar";
+import { ThemeProvider, createTheme, Box } from "@mui/material";
 
-// modified theming for the app
 const theme = createTheme({
   breakpoints: {
     values: {
@@ -13,16 +11,19 @@ const theme = createTheme({
       xl: 1200,
       xxl: 1400
     }
-  }
+  },
 })
 
 function App() {
   return (
-    <> 
+    
     <ThemeProvider theme={theme}>
-        <Navbar/>
+      <> 
+      <Box>
+        hello react and MUI
+      </Box>
+      </>  
     </ThemeProvider>
-    </>
   )
 }
 
