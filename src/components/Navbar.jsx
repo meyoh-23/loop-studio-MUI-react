@@ -53,7 +53,7 @@ const Navbar = () => {
                         sx={{
                             color: "hsl(0, 0%, 100%)",
                             fontFamily: "'Alata', sans-serif;",
-                            fontWeight: "400",
+                            textTransform: "capitalize",
                             fontSize: "1rem",
                             "&:hover": {
                                 borderBottom: "3px sl(0, 0%, 100%)",
@@ -69,8 +69,8 @@ const Navbar = () => {
                         underline='none'
                         sx={{
                             color: "hsl(0, 0%, 100%)",
-                            fontFamily: "'Alata', sans-serif;",
-                            fontWeight: "400",
+                            fontFamily: " 'Josefin Sans', sans-serif",
+                            textTransform: "capitalize",
                             fontSize: "1rem",
                             "&:hover": {
                                 textDecoration: "underline",
@@ -86,8 +86,8 @@ const Navbar = () => {
                         underline='none'
                         sx={{
                             color: "hsl(0, 0%, 100%)",
-                            fontFamily: "'Alata', sans-serif;",
-                            fontWeight: "400",
+                            fontFamily: " 'Josefin Sans', sans-serif",
+                            textTransform: "capitalize",
                             fontSize: "1rem",
                             "&:hover": {
                                 textDecoration: "underline",
@@ -103,8 +103,8 @@ const Navbar = () => {
                         underline='none'
                         sx={{
                             color: "hsl(0, 0%, 100%)",
-                            fontFamily: "'Alata', sans-serif;",
-                            fontWeight: "400",
+                            fontFamily: " 'Josefin Sans', sans-serif",
+                            textTransform: "capitalize",
                             fontSize: "1rem",
                             "&:hover": {
                                 textDecoration: "underline",
@@ -151,8 +151,8 @@ const Navbar = () => {
                         xs: 'flex',
                         sm: "none",
                     },
-                    fontFamily: "'Alata', sans-serif;",
-                    fontWeight: "400",
+                    flexDirection: "column",
+                    backgroundColor: "hsl(0, 0%, 0%)",
                     position: "relative",
                     pt: 3,
                     width: "100vw",
