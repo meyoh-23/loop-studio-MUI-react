@@ -24,5 +24,11 @@ const data = [
         heading: "Manufactured with the best materials",
         description: "Our modern furniture store provide s high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as pssible. With three decades of experience in this industry, we understand what customers want for their homes and offices."
     },
+    {
+        mobileImage: mobileHeroImage3,
+        desktopImage: desktopHeroImage3,
+        heading: "Manufactured with the best materials",
+        description: "Our modern furniture store provide s high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as pssible. With three decades of experience in this industry, we understand what customers want for their homes and offices."
+    },
 ];
 export default data;

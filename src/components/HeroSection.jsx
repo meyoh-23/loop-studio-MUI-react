@@ -1,16 +1,37 @@
-import { Box, Button, ButtonGroup, Grid, Typography } from '@mui/material';
-import React, { useState } from 'react';
-import data from "./../assets/data";
+import { Box, Button, Grid, Typography } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import dataDisplayed from "./../assets/data";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+/* import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'; */
 
 const HeroSection = () => {
     const [currentState, setCurrentState] = useState(0);
+    const [data, setData] = useState(dataDisplayed);
+
+useEffect(() => {
+    const lastIndex = data.length - 2;
+    if (currentState < 0) {
+        setCurrentState(lastIndex);
+    }
+    if (currentState > lastIndex) {
+        setCurrentState(0);
+    }
+    },[currentState, data])
+
+    // for the auto-slide functionality
+    useEffect(() => { 
+    let slider = setInterval(() => {
+        setCurrentState(currentState + 1);
+    }, 5000);
+    return () =>clearInterval(slider);
+    }, [currentState])
+
 
     const goToNext = (currentState) => {
         setCurrentState(currentState);
     }
+
     return (
     <Box>
         <Grid
@@ -78,9 +99,9 @@ const HeroSection = () => {
                 }}
                 bgcolor="primary.light"
                 >
-                    <ButtonGroup variant="contained" aria-label="outlined primary button group">
+                    {/* <ButtonGroup variant="contained" aria-label="outlined primary button group">
                         <Button
-                        onClick={ () => setCurrentState(currentState -1)}
+                        onClick={ () => setCurrentState(currentState - 1)}
                         >
                             <ChevronLeftIcon/>
                         </Button>
@@ -89,7 +110,7 @@ const HeroSection = () => {
                         >
                             <ChevronRightIcon/>
                         </Button>
-                    </ButtonGroup>
+                    </ButtonGroup> */}
                 </Box>
             </Grid>
             <Grid
@@ -131,4 +152,4 @@ const HeroSection = () => {
     </Box>
 )}
 
-export default HeroSection
+export default HeroSection;
