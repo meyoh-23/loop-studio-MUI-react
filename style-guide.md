@@ -26,3 +26,4 @@ The designs were created to the following widths:
 
 - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
 - Weights: 500, 600, 700
+  font-family: 'League Spartan', sans-serif;

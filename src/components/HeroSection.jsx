@@ -2,6 +2,7 @@ import { Box, Button, Grid, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import dataDisplayed from "./../assets/data";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Navbar from './Navbar';
 /* import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'; */
 
@@ -53,8 +54,8 @@ useEffect(() => {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 height: {
-                    xs: "70vh",
-                    md: "60vh"
+                    xs: "80vh",
+                    md: "80vh"
                 },
                 position: "relative",
                 display: "flex",
@@ -62,15 +63,16 @@ useEffect(() => {
                 justifyContent: "space-between"
             }}
             >
-                <Box>
-                    Navbar buana
-                </Box>
+                <Navbar/>
                 <Box
                 width="100%"
                 sx={{
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    position: "absolute",
+                    bottom: "20px",
+                    left: "20px",
                 }}
                 >
                     {data.map((data, currentState) => {

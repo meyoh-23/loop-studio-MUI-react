@@ -9,24 +9,35 @@ const Footer = () => {
         display: "grid",
         placeContent: "center",
         padding: "4rem",
+        background: "hsl(0, 0%, 63%)",
+        my: "2rem",
     }}
     >
-        <Typography>
+        <Typography variant='h4'
+        color="hsl(0, 0%, 100%)"
+        >
             room
         </Typography>
         <Typography variant='p'>
             <Link
             underline='none'
             href="#github link"
+            color="hsl(0, 0%, 100%)"
             >
             coded by felix Ouma
             </Link>
         </Typography>
         <Typography
         variant='p'
+        color="hsl(0, 0%, 100%)"
         >
             &copy; <span>{year}</span> 
-            <Link underline='none' href="#frontendMentor">Frontend Mentor</Link>
+            <Link underline='none'
+            href="#frontendMentor"
+            color="hsl(0, 0%, 100%)"
+            >
+                Frontend Mentor
+            </Link>
         </Typography>
     </Box>
 )}
