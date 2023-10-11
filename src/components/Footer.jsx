@@ -21,7 +21,7 @@ const Footer = () => {
         <Typography variant='p'>
             <Link
             underline='none'
-            href="#github link"
+            href="https://github.com/meyoh-23/loop-studio-MUI-react"
             color="hsl(0, 0%, 100%)"
             >
             coded by felix Ouma
