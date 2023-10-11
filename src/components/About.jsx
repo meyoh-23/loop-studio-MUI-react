@@ -63,7 +63,10 @@ const About = () => {
                         lineHeight: "1.25rem",
                     }}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet excepturi perspiciatis eligendi nobis illum. Aliquam assumenda asperiores dicta numquam ipsam voluptates eum beatae, nobis id repellat soluta cumque. Nesciunt, in.
+                        Our multifunctional collection blends design and function to suit your individual taste.
+                        Make each room unique, or pick a cohesive theme that best express your interests and what
+                        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                        or anything in between. Product specialists are available to help you create your dream space.
                     </Typography>
                 </Container>
             </Grid>
