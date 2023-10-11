@@ -46,7 +46,7 @@ const About = () => {
                     pb={2}
                     sx={{
                         display: "block",
-                        my:4,
+                        my:1.4,
                         fontFamily: "'League Spartan', sans-serif",
                         fontWeight: "600",
                         color: "hsl(0, 0%, 0%)",
