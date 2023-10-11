@@ -9,7 +9,7 @@ const Footer = () => {
         display: "grid",
         placeContent: "center",
         padding: "4rem",
-        background: "hsl(0, 0%, 63%)",
+        background: "hsl(0, 0%, 0%)",
         my: "2rem",
     }}
     >
@@ -33,7 +33,7 @@ const Footer = () => {
         >
             &copy; <span>{year}</span> 
             <Link underline='none'
-            href="#frontendMentor"
+            href="https://www.frontendmentor.io?ref=challengr"
             color="hsl(0, 0%, 100%)"
             >
                 Frontend Mentor

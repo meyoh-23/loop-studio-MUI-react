@@ -52,9 +52,10 @@ const Navbar = () => {
                         underline='none'
                         sx={{
                             color: "hsl(0, 0%, 100%)",
-                            fontFamily: "'Alata', sans-serif;",
+                            fontFamily: "'Alata', sans-serif",
+                            fontWeight: "700",
                             textTransform: "capitalize",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             "&:hover": {
                                 borderBottom: "3px sl(0, 0%, 100%)",
                                 cursor: "pointer",

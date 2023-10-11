@@ -38,16 +38,31 @@ const About = () => {
                 <Container
                 sx={{
                     textAlign: "left",
-                    py: 10,
+                    py: 2,
                     px: "10px",
                 }}
                 >
                     <Typography variant='h4'
                     pb={2}
+                    sx={{
+                        display: "block",
+                        my:4,
+                        fontFamily: "'League Spartan', sans-serif",
+                        fontWeight: "600",
+                        color: "hsl(0, 0%, 0%)",
+                    }}
                     >
                         about our furniture
                     </Typography>
-                    <Typography variant='p'>
+                    <Typography variant='p'
+                    sx={{
+                        fontFamily: "'League Spartan', sans-serif",
+                        fontWeight: "600",
+                        color: "hsl(0, 0%, 63%)",
+                        fontSize: "0.9375rem",
+                        lineHeight: "1.25rem",
+                    }}
+                    >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet excepturi perspiciatis eligendi nobis illum. Aliquam assumenda asperiores dicta numquam ipsam voluptates eum beatae, nobis id repellat soluta cumque. Nesciunt, in.
                     </Typography>
                 </Container>

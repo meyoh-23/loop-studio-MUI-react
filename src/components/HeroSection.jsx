@@ -1,10 +1,10 @@
-import { Box, Button, Grid, Typography } from '@mui/material';
+import { Box, Button, ButtonGroup, Grid, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import dataDisplayed from "./../assets/data";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Navbar from './Navbar';
-/* import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'; */
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 const HeroSection = () => {
     const [currentState, setCurrentState] = useState(0);
@@ -101,9 +101,9 @@ useEffect(() => {
                 }}
                 bgcolor="primary.light"
                 >
-                    {/* <ButtonGroup variant="contained" aria-label="outlined primary button group">
+                    <ButtonGroup variant="contained" aria-label="outlined primary button group">
                         <Button
-                        onClick={ () => setCurrentState(currentState - 1)}
+                        onClick={ () => setCurrentState(currentState + 1)}
                         >
                             <ChevronLeftIcon/>
                         </Button>
@@ -112,7 +112,7 @@ useEffect(() => {
                         >
                             <ChevronRightIcon/>
                         </Button>
-                    </ButtonGroup> */}
+                    </ButtonGroup>
                 </Box>
             </Grid>
             <Grid
@@ -134,16 +134,34 @@ useEffect(() => {
                 >
                     <Typography variant='h4'
                     pb={2}
+                    sx={{
+                        fontFamily: "'League Spartan', sans-serif",
+                        fontWeight: "600",
+                        color: "hsl(0, 0%, 0%)",
+                        fontSize: "2rem",
+                    }}
                     >
                         {data[currentState].heading}
                     </Typography>
-                    <Typography variant='p'>
+                    <Typography variant='p'
+                    sx={{
+                        fontFamily: "'League Spartan', sans-serif",
+                        fontWeight: "600",
+                        color: "hsl(0, 0%, 63%)",
+                        fontSize: "0.9375rem",
+                        lineHeight: "1.25rem",
+                    }}
+                    >
                         {data[currentState].description}
                     </Typography>
                     <Button
                     sx={{
                         display: "block",
                         my:4,
+                        fontFamily: "'League Spartan', sans-serif",
+                        fontWeight: "600",
+                        color: "hsl(0, 0%, 63%)",
+                        letterSpacing: "15px",
                     }}
                     >
                         shop now <span><ArrowForwardIcon/></span>
